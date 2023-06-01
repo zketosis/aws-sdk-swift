@@ -7025,7 +7025,7 @@ extension ListChannelMessagesInput: ClientRuntime.URLPathProvider {
         guard let channelArn = channelArn else {
             return nil
         }
-        return "/channels/\(channelArn.urlPercentEncoding())/messages"
+        return "/channels/\(channelArn)/messages"
     }
 }
 
